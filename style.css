@@ -1,0 +1,198 @@
+:root {
+    /*   color variables */
+    --clr-primary: #e91b1b;
+    --clr-primary-hover: #29e6a7;
+    --clr-primary-dark: #039d69;
+    --clr-gray100: #f0f7f8;
+    --clr-gray200: #cfd8dc;
+  
+    /*   border radius */
+    --radius: 0.2rem;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Montserrat, sans-serif;
+    background: var(--clr-gray100);
+    background-image: url("img/sunrise-sunset-into-water-scenery-background_281368-402.webp");
+    background-attachment: fixed;
+  }
+  /*Navbar modification starts here*/
+
+  .nav-list {
+    background: white;
+    box-shadow: 0px 0px 10px var(--clr-gray200);
+    padding: 1rem 0;
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+
+  
+  .nav-item {
+    list-style: none;
+    margin-right: 2rem;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: black;
+    transition: all 200ms ease-in;
+  }
+  
+  .nav-item a:hover {
+    color: var(--clr-primary-dark);
+
+  }
+  
+  
+  .nav-item:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+  }
+
+  .nav-button{
+    /*nav button modification for youtube*/
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    background: var(--clr-primary);
+    border: none;
+    outline: none;
+    border-radius: var(--radius);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+  }
+  /*nav button modification for youtube on hover*/
+  .nav-button:hover {
+
+    background: var(--clr-primary-hover);
+  }
+  /*navbar modification ends here*/
+  
+
+  /* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: transparent;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: var(--clr-primary-dark);
+  text-decoration: underline;
+}
+/*breadcrumb modification ends here*/
+
+
+/*style content list and content list item*/
+.content-list{
+  list-style: none;
+}
+.content-list-item{
+  color: black;
+}
+.content-list-item:hover{
+  text-decoration: none;
+  color: red;
+}
+
+/*style content list ends here*/
+
+/*styling education table*/
+table{
+  width: 100%;
+  border: 1px solid;
+  border-collapse: collapse;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: silver;
+  color: black
+}
+tr:nth-child(even){
+  background-color: grey;
+}
+
+th{
+  border: 1px solid #ddd;
+  padding: 8px;
+  color: black;
+  background-color: grey;
+
+}
+td{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+/*styling education table ends here*/
+
+/*styling flexbox starts here*/
+.flex-container {
+  display: flex;
+  background-color: transparent;
+  height: fit-content;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.flex-content{
+  background-color: silver;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 20px;
+  height: fit-content;
+  width: fit-content;
+}
+.image-flex{
+  max-width: 400px;
+  max-height: 250px;
+}
+.image-flex:hover{
+  
+  transform: scale(2.25);
+  transition: 0.5s ease;
+}
+/*styling flexbox ends here*/
+
+.foot{
+  position:sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:transparent;
+}
+
